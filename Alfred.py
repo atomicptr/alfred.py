@@ -1,6 +1,6 @@
 # Copyright (c) 2013 Christopher Kaster (@Kasoki)
 # 
-# This file is part of alfred.py <https://github.com/Kasoki/alfredpy>
+# This file is part of alfred.py <https://github.com/Kasoki/alfred.py>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -22,6 +22,8 @@
 import os
 
 """ IMPORTANT: Not sure how to use this lib? Check out the "example.py" file :) """
+
+Version="0.1"
 
 class Handler:
 	""" Alfred.Handler, this class is responsible for handling Alfred! """
