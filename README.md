@@ -6,7 +6,7 @@ Lightweight Python binding for [Alfred workflows](http://alfredapp.com).
 How to use it
 -------------
 
-Check out my [example.py]() or look at this fancy example:
+Check out my [example.py](example.py) or look at this fancy example:
 
 ```python
 import sys
