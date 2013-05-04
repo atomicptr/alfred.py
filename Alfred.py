@@ -23,7 +23,7 @@ import os
 
 """ IMPORTANT: Not sure how to use this lib? Check out the "example.py" file :) """
 
-Version="0.1"
+Version="0.1.1"
 
 class Handler:
 	""" Alfred.Handler, this class is responsible for handling Alfred! """
@@ -46,7 +46,7 @@ class Handler:
 			self.query = query
 		else:
 			if use_no_query_string:
-				self.query = "NO QUERY!"
+				self.query = "EMPTY_QUERY"
 			else:
 				self.query = ""
 
@@ -54,6 +54,12 @@ class Handler:
 
 	def get_current_directory(self):
 		return os.getcwd()
+
+	def query_is_empty(self):
+		if self.query == "EMPTY_QUERY" or self.query == "":
+			return True
+		else:
+			return False
 
 	def add_item(self, item):
 		""" Adds a new Alfred.Item to this handler

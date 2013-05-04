@@ -17,5 +17,10 @@ handler.add_item(Alfred.Item(title="Entry #2", subtitle="Cake!", uid=815, arg="#
 # Add item with add_new_item
 handler.add_new_item(title="Sir, you're doing it wrong!", subtitle=handler.query, arg="Hello", uid="cake")
 
+# check if the handler has no query
+if handler.query_is_empty():
+	handler.add_new_item(title="No query :(")
+
+
 # push the items to Alfred
-handler.push(max_results=3)
+handler.push(max_results=4)
