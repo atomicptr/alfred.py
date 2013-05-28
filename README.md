@@ -27,6 +27,8 @@ Workflows using alfred.py
 --------------------------
 
 * [alfred-haxelib](https://github.com/Kasoki/alfred-haxelib)
+* [Cyberduck-Favorites](https://github.com/Kasoki/Cyberduck-Favorites)
+* [Maestro](https://github.com/Kasoki/Maestro)
 
 You want to add your workflow here? Just [write me a mail ;)](mailto:ikasoki@gmail.com).
 
