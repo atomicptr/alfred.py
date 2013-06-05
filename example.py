@@ -24,3 +24,6 @@ if handler.query_is_empty():
 
 # push the items to Alfred
 handler.push(max_results=4)
+
+# optional! you can test your handler output with this line:
+# handler.test_push(max_results=4)
