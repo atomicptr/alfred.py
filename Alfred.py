@@ -23,7 +23,7 @@ import os
 
 """ IMPORTANT: Not sure how to use this lib? Check out the "example.py" file :) """
 
-Version="0.1.1"
+Version="0.2"
 
 class Handler:
 	""" Alfred.Handler, this class is responsible for handling Alfred! """
@@ -121,7 +121,28 @@ class Handler:
 		max_results -- How many results should be in this string? (Default: None - No limitation)
 
 		"""
-		print self.to_xml(max_results)
+		print(self.to_xml(max_results))
+
+	def test_push(self, max_results=None):
+		""" Sometimes it's faster to just do stuff in your editor instead of opening Alfred ;)
+
+		Keyword arguments:
+		max_results -- How many results should be in this string? (Default: None - No limitation)
+		
+		"""
+
+		counter = 1
+
+		for item in self.items:
+			print("Entry #%s:" % counter)
+			print("\tTitle: %s" % item.title)
+			print("\tSubtitle: %s" % item.subtitle)
+			print("\tArguments: %s, Icon: %s" % (item.arg, item.icon))
+			print("-"*30)
+
+			counter += 1
+
+
 
 class Item:
 	def __init__(self, title="", subtitle="", uid=None, arg="", icon=None):
