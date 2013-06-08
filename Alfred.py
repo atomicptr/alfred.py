@@ -166,12 +166,16 @@ class Item:
 		title = '<title>%s</title>' % self.title
 		subtitle = '<subtitle>%s</subtitle>' % self.subtitle
 		icon = ''
+		args = ''
 
 		if self.icon is not None:
 			icon = '<icon>%s</icon>' % self.icon
 
-		item_content = "%s%s%s" % (title, subtitle, icon)
+		if self.arg is not None:
+			args = '<arg>%s</arg>' % self.arg
 
-		item_info = '<item uid="%s" arg="%s">%s</item>' % (self.uid, self.arg, item_content)
+		item_content = "%s%s%s%s" % (title, subtitle, icon, args)
+
+		item_info = '<item uid="%s">%s</item>' % (self.uid, item_content)
 
 		return item_info
